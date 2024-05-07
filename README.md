@@ -36,6 +36,13 @@ Train a model:
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved. It is also possible to continue training from there later on.
 
+Training pre- and post- normalisation:
+
+Edit the .configs/.yaml files to include pre/post normalisation techniques.
+Run the train.sh script for the respective normalisation instance. 
+
+Example (pre-normalisation): ./scripts/train.sh
+
 # Training comparisons
 
 A line plot comparison for pre- and post- normalisation training was conducted against the baseline.log file. 
