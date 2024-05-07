@@ -46,8 +46,8 @@ Example (pre-normalisation): ./scripts/train.sh
 # Training comparisons
 
 A line plot comparison for pre- and post- normalisation training was conducted against the baseline.log file. 
-The pre- and post- normalisation training files (and output .logs) were copied from the following repository:
-    https://github.com/bigbraindump/joeynmt
+The pre- and normalisation training, output '*.logs', and logs_table.py files were shared and collaborated on from user kmanaa.
+In addition please *note* that the post-normalisation training was completed on the UZH cluster from user stariq after training on the local CPU failed multiple times, the log files were subsequently copied to the current repository.
 
 # Changes for Windows compatibility
 
