@@ -62,3 +62,14 @@ Usage: python3 linechart.py
 # AI use
 
 OpenAI ChatGPT used for debugging, specifically while editing the plots.py file.
+
+# Task 2 - Discussion
+
+1.	Given that there is a difference in the training progress for the three models, can you think of a reason for it?
+
+The data clearly shows that the model using pre-norm (referred to as pre_err) significantly outperforms the baseline model throughout the training process. This advantage can be attributed to several factors. Firstly, applying pre-norm addresses the vanishing gradient problem by normalizing inputs right before sub-layer operations like self-attention and feed-forward networks, ensuring more stable gradients across the model's deeper layers. This stabilization facilitates more effective learning, particularly in complex models. Additionally, the pre_err model exhibits faster convergence, starting with a lower perplexity and improving more rapidly than the baseline. This aligns with the findings of Wang et al. (2019), suggesting that our models are similarly benefiting from pre-norm's ability to enhance gradient flow during backpropagation. Furthermore, the consistently better performance of the pre_err model implies that the learning rate and other hyperparameters are likely better optimized for the pre-norm setup, thereby amplifying its benefits.
+
+
+2.	In what way does our setup differ from Wang et. al. 2019? How could that have influence our results?
+
+The main and biggest difference between our setup and Wang et al.’s approach is that we used a mixed approach (pre-norm in the encoder, post-norm in the decoder) while they test pre-norm and post-norm separately. One might think that the baseline model with this mixed setting performs better due to the pre-norm and post-norm stabilizing it. However, the pre-norm model had lower perplexity scores and better performance. The baseline could have performed better with different hyperparameters.
