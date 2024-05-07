@@ -35,3 +35,19 @@ Train a model:
     ./scripts/train.sh
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved. It is also possible to continue training from there later on.
+
+# Training comparisons
+
+A line plot comparison for pre- and post- normalisation training was conducted against the baseline.log file. 
+The pre- and post- normalisation training files (and output .logs) were copied from the following repository:
+    https://github.com/bigbraindump/joeynmt
+
+# Changes for Windows compatibility
+
+-edited make_virtualenv.sh to use absolute python PATH, python3 was not recognized despite having python 3.10 installed
+-edited virtual env activation command for windows system, source $base/venvs/torch3/Scripts/activate"
+-edited download scripts, wget to curl
+
+# AI use
+
+OpenAI ChatGPT used for debugging, specifically while editing the plots.py file.

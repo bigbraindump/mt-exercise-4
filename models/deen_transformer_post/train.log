@@ -1,0 +1,122 @@
+2024-05-07 08:45:53,971 - INFO - root - Hello! This is Joey-NMT (version 2.3.0).
+2024-05-07 08:45:53,971 - INFO - joeynmt.config -                           cfg.name : deen_transformer_post
+2024-05-07 08:45:53,972 - INFO - joeynmt.config -                cfg.joeynmt_version : 2.0.0
+2024-05-07 08:45:53,972 - INFO - joeynmt.config -                     cfg.data.train : data/train
+2024-05-07 08:45:53,972 - INFO - joeynmt.config -                       cfg.data.dev : data/dev
+2024-05-07 08:45:53,972 - INFO - joeynmt.config -                      cfg.data.test : data/test
+2024-05-07 08:45:53,972 - INFO - joeynmt.config -              cfg.data.dataset_type : plain
+2024-05-07 08:45:53,973 - INFO - joeynmt.config -                  cfg.data.src.lang : de
+2024-05-07 08:45:53,973 - INFO - joeynmt.config -             cfg.data.src.lowercase : False
+2024-05-07 08:45:53,974 - INFO - joeynmt.config -                 cfg.data.src.level : bpe
+2024-05-07 08:45:53,974 - INFO - joeynmt.config -             cfg.data.src.voc_limit : 32000
+2024-05-07 08:45:53,974 - INFO - joeynmt.config -          cfg.data.src.voc_min_freq : 1
+2024-05-07 08:45:53,974 - INFO - joeynmt.config -            cfg.data.src.max_length : 100
+2024-05-07 08:45:53,974 - INFO - joeynmt.config -              cfg.data.src.voc_file : shared_models/joint-vocab.txt
+2024-05-07 08:45:53,975 - INFO - joeynmt.config -        cfg.data.src.tokenizer_type : subword-nmt
+2024-05-07 08:45:53,975 - INFO - joeynmt.config - cfg.data.src.tokenizer_cfg.pretokenizer : none
+2024-05-07 08:45:53,975 - INFO - joeynmt.config - cfg.data.src.tokenizer_cfg.num_merges : 3200
+2024-05-07 08:45:53,975 - INFO - joeynmt.config -   cfg.data.src.tokenizer_cfg.codes : data/codes3200.bpe
+2024-05-07 08:45:53,976 - INFO - joeynmt.config -                  cfg.data.trg.lang : en
+2024-05-07 08:45:53,976 - INFO - joeynmt.config -             cfg.data.trg.lowercase : False
+2024-05-07 08:45:53,976 - INFO - joeynmt.config -                 cfg.data.trg.level : bpe
+2024-05-07 08:45:53,976 - INFO - joeynmt.config -             cfg.data.trg.voc_limit : 32000
+2024-05-07 08:45:53,976 - INFO - joeynmt.config -          cfg.data.trg.voc_min_freq : 1
+2024-05-07 08:45:53,976 - INFO - joeynmt.config -            cfg.data.trg.max_length : 100
+2024-05-07 08:45:53,977 - INFO - joeynmt.config -              cfg.data.trg.voc_file : shared_models/joint-vocab.txt
+2024-05-07 08:45:53,977 - INFO - joeynmt.config -        cfg.data.trg.tokenizer_type : subword-nmt
+2024-05-07 08:45:53,977 - INFO - joeynmt.config - cfg.data.trg.tokenizer_cfg.pretokenizer : none
+2024-05-07 08:45:53,977 - INFO - joeynmt.config - cfg.data.trg.tokenizer_cfg.num_merges : 3200
+2024-05-07 08:45:53,977 - INFO - joeynmt.config -   cfg.data.trg.tokenizer_cfg.codes : data/codes3200.bpe
+2024-05-07 08:45:53,977 - INFO - joeynmt.config -              cfg.testing.beam_size : 5
+2024-05-07 08:45:53,977 - INFO - joeynmt.config -             cfg.testing.beam_alpha : 1.0
+2024-05-07 08:45:53,978 - INFO - joeynmt.config -           cfg.training.random_seed : 42
+2024-05-07 08:45:53,978 - INFO - joeynmt.config -             cfg.training.optimizer : adam
+2024-05-07 08:45:53,978 - INFO - joeynmt.config -         cfg.training.normalization : tokens
+2024-05-07 08:45:53,978 - INFO - joeynmt.config -         cfg.training.learning_rate : 0.0003
+2024-05-07 08:45:53,978 - INFO - joeynmt.config -            cfg.training.batch_size : 2048
+2024-05-07 08:45:53,978 - INFO - joeynmt.config -            cfg.training.batch_type : token
+2024-05-07 08:45:53,979 - INFO - joeynmt.config -       cfg.training.eval_batch_size : 1024
+2024-05-07 08:45:53,979 - INFO - joeynmt.config -       cfg.training.eval_batch_type : token
+2024-05-07 08:45:53,979 - INFO - joeynmt.config -            cfg.training.scheduling : plateau
+2024-05-07 08:45:53,979 - INFO - joeynmt.config -              cfg.training.patience : 8
+2024-05-07 08:45:53,979 - INFO - joeynmt.config -          cfg.training.weight_decay : 0.0
+2024-05-07 08:45:53,979 - INFO - joeynmt.config -       cfg.training.decrease_factor : 0.7
+2024-05-07 08:45:53,980 - INFO - joeynmt.config - cfg.training.early_stopping_metric : ppl
+2024-05-07 08:45:53,980 - INFO - joeynmt.config -                cfg.training.epochs : 10
+2024-05-07 08:45:53,980 - INFO - joeynmt.config -       cfg.training.validation_freq : 500
+2024-05-07 08:45:53,980 - INFO - joeynmt.config -          cfg.training.logging_freq : 100
+2024-05-07 08:45:53,980 - INFO - joeynmt.config -           cfg.training.eval_metric : ['bleu']
+2024-05-07 08:45:53,980 - INFO - joeynmt.config -             cfg.training.model_dir : models/deen_transformer_post
+2024-05-07 08:45:53,981 - INFO - joeynmt.config -             cfg.training.overwrite : True
+2024-05-07 08:45:53,981 - INFO - joeynmt.config -               cfg.training.shuffle : True
+2024-05-07 08:45:53,981 - INFO - joeynmt.config -              cfg.training.use_cuda : False
+2024-05-07 08:45:53,981 - INFO - joeynmt.config -     cfg.training.max_output_length : 100
+2024-05-07 08:45:53,981 - INFO - joeynmt.config -     cfg.training.print_valid_sents : [0, 1, 2, 3, 4]
+2024-05-07 08:45:53,981 - INFO - joeynmt.config -       cfg.training.label_smoothing : 0.3
+2024-05-07 08:45:53,982 - INFO - joeynmt.config -              cfg.model.initializer : xavier_uniform
+2024-05-07 08:45:53,982 - INFO - joeynmt.config -         cfg.model.bias_initializer : zeros
+2024-05-07 08:45:53,982 - INFO - joeynmt.config -                cfg.model.init_gain : 1.0
+2024-05-07 08:45:53,982 - INFO - joeynmt.config -        cfg.model.embed_initializer : xavier_uniform
+2024-05-07 08:45:53,982 - INFO - joeynmt.config -          cfg.model.embed_init_gain : 1.0
+2024-05-07 08:45:53,982 - INFO - joeynmt.config -          cfg.model.tied_embeddings : True
+2024-05-07 08:45:53,982 - INFO - joeynmt.config -             cfg.model.tied_softmax : True
+2024-05-07 08:45:53,983 - INFO - joeynmt.config -             cfg.model.encoder.type : transformer
+2024-05-07 08:45:53,983 - INFO - joeynmt.config -        cfg.model.encoder.norm_type : post
+2024-05-07 08:45:53,983 - INFO - joeynmt.config -       cfg.model.encoder.num_layers : 4
+2024-05-07 08:45:53,983 - INFO - joeynmt.config -        cfg.model.encoder.num_heads : 2
+2024-05-07 08:45:53,983 - INFO - joeynmt.config - cfg.model.encoder.embeddings.embedding_dim : 256
+2024-05-07 08:45:53,983 - INFO - joeynmt.config - cfg.model.encoder.embeddings.scale : True
+2024-05-07 08:45:53,984 - INFO - joeynmt.config - cfg.model.encoder.embeddings.dropout : 0
+2024-05-07 08:45:53,984 - INFO - joeynmt.config -      cfg.model.encoder.hidden_size : 256
+2024-05-07 08:45:53,984 - INFO - joeynmt.config -          cfg.model.encoder.ff_size : 512
+2024-05-07 08:45:53,984 - INFO - joeynmt.config -          cfg.model.encoder.dropout : 0
+2024-05-07 08:45:53,984 - INFO - joeynmt.config -             cfg.model.decoder.type : transformer
+2024-05-07 08:45:53,984 - INFO - joeynmt.config -        cfg.model.decoder.norm_type : post
+2024-05-07 08:45:53,984 - INFO - joeynmt.config -       cfg.model.decoder.num_layers : 1
+2024-05-07 08:45:53,985 - INFO - joeynmt.config -        cfg.model.decoder.num_heads : 2
+2024-05-07 08:45:53,985 - INFO - joeynmt.config - cfg.model.decoder.embeddings.embedding_dim : 256
+2024-05-07 08:45:53,985 - INFO - joeynmt.config - cfg.model.decoder.embeddings.scale : True
+2024-05-07 08:45:53,985 - INFO - joeynmt.config - cfg.model.decoder.embeddings.dropout : 0
+2024-05-07 08:45:53,985 - INFO - joeynmt.config -      cfg.model.decoder.hidden_size : 256
+2024-05-07 08:45:53,985 - INFO - joeynmt.config -          cfg.model.decoder.ff_size : 512
+2024-05-07 08:45:53,986 - INFO - joeynmt.config -          cfg.model.decoder.dropout : 0
+2024-05-07 08:45:53,986 - INFO - joeynmt.config -                      cfg.model_dir : models/deen_transformer_post
+2024-05-07 08:45:53,986 - INFO - joeynmt.data - Building tokenizer...
+2024-05-07 08:45:54,003 - INFO - joeynmt.tokenizers - de tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, 100), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-07 08:45:54,004 - INFO - joeynmt.tokenizers - en tokenizer: SubwordNMTTokenizer(level=bpe, lowercase=False, normalize=False, filter_by_length=(-1, 100), pretokenizer=none, tokenizer=BPE, separator=@@, dropout=0.0)
+2024-05-07 08:45:54,004 - INFO - joeynmt.data - Loading train set...
+2024-05-07 08:45:54,419 - INFO - joeynmt.data - Building vocabulary...
+2024-05-07 08:45:54,629 - INFO - joeynmt.data - Loading dev set...
+2024-05-07 08:45:54,632 - INFO - joeynmt.data - Loading test set...
+2024-05-07 08:45:54,641 - INFO - joeynmt.data - Data loaded.
+2024-05-07 08:45:54,642 - INFO - joeynmt.data - Train dataset: PlaintextDataset(split=train, len=100000, src_lang="de", trg_lang="en", has_trg=True, random_subset=-1, has_src_prompt=False, has_trg_prompt=False)
+2024-05-07 08:45:54,642 - INFO - joeynmt.data - Valid dataset: PlaintextDataset(split=dev, len=500, src_lang="de", trg_lang="en", has_trg=True, random_subset=-1, has_src_prompt=False, has_trg_prompt=False)
+2024-05-07 08:45:54,642 - INFO - joeynmt.data -  Test dataset: PlaintextDataset(split=test, len=2999, src_lang="de", trg_lang="en", has_trg=True, random_subset=-1, has_src_prompt=False, has_trg_prompt=False)
+2024-05-07 08:45:54,645 - INFO - joeynmt.data - First training example:
+	[SRC] gem@@ ä@@ ß der vom Europäischen Parlament und von der gesam@@ ten Europäischen Union n@@ un@@ mehr ständi@@ g ver@@ tre@@ ten@@ en Lin@@ ie möchte ich Sie jedoch bit@@ ten , den gan@@ zen Ein@@ f@@ lu@@ ß Ih@@ res Am@@ tes und der Institu@@ tion , die Sie ver@@ treten , bei dem Prä@@ sident@@ schaf@@ ts@@ kan@@ di@@ d@@ aten und G@@ ou@@ ver@@ ne@@ ur von Tex@@ as , Ge@@ or@@ ge W@@ . B@@ us@@ h , der zur Aus@@ setzung der V@@ oll@@ stre@@ ck@@ ung des To@@ des@@ ur@@ teil@@ s und zur Be@@ gn@@ a@@ di@@ gung des Ver@@ ur@@ teil@@ ten be@@ fu@@ gt ist , gel@@ ten@@ d zu machen .
+	[TRG] however , I would ask you , in acc@@ ord@@ ance with the line which is now con@@ st@@ ant@@ ly fol@@ low@@ ed by the European Parliament and by the whole of the European Community , to make represent@@ ations , using the wei@@ ght of your pres@@ ti@@ gi@@ ous off@@ ice and the institu@@ tion you re@@ present , to the President and to the Go@@ vern@@ or of Tex@@ as , Mr B@@ us@@ h , who has the power to order a stay of ex@@ ec@@ ution and to re@@ pri@@ e@@ ve the con@@ dem@@ ned per@@ son .
+2024-05-07 08:45:54,645 - INFO - joeynmt.data - First 10 Src tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) , (5) . (6) the (7) in (8) die (9) der
+2024-05-07 08:45:54,645 - INFO - joeynmt.data - First 10 Trg tokens: (0) <unk> (1) <pad> (2) <s> (3) </s> (4) , (5) . (6) the (7) in (8) die (9) der
+2024-05-07 08:45:54,645 - INFO - joeynmt.data - Number of unique Src tokens (vocab_size): 4117
+2024-05-07 08:45:54,646 - INFO - joeynmt.data - Number of unique Trg tokens (vocab_size): 4117
+2024-05-07 08:45:54,659 - INFO - joeynmt.model - Building an encoder-decoder model...
+2024-05-07 08:45:54,759 - INFO - joeynmt.model - Enc-dec model built.
+2024-05-07 08:45:54,761 - INFO - joeynmt.model - Total params: 3953152
+2024-05-07 08:45:54,762 - DEBUG - joeynmt.model - Trainable parameters: ['decoder.layers.0.dec_layer_norm.bias', 'decoder.layers.0.dec_layer_norm.weight', 'decoder.layers.0.feed_forward.layer_norm.bias', 'decoder.layers.0.feed_forward.layer_norm.weight', 'decoder.layers.0.feed_forward.pwff_layer.0.bias', 'decoder.layers.0.feed_forward.pwff_layer.0.weight', 'decoder.layers.0.feed_forward.pwff_layer.3.bias', 'decoder.layers.0.feed_forward.pwff_layer.3.weight', 'decoder.layers.0.src_trg_att.k_layer.bias', 'decoder.layers.0.src_trg_att.k_layer.weight', 'decoder.layers.0.src_trg_att.output_layer.bias', 'decoder.layers.0.src_trg_att.output_layer.weight', 'decoder.layers.0.src_trg_att.q_layer.bias', 'decoder.layers.0.src_trg_att.q_layer.weight', 'decoder.layers.0.src_trg_att.v_layer.bias', 'decoder.layers.0.src_trg_att.v_layer.weight', 'decoder.layers.0.trg_trg_att.k_layer.bias', 'decoder.layers.0.trg_trg_att.k_layer.weight', 'decoder.layers.0.trg_trg_att.output_layer.bias', 'decoder.layers.0.trg_trg_att.output_layer.weight', 'decoder.layers.0.trg_trg_att.q_layer.bias', 'decoder.layers.0.trg_trg_att.q_layer.weight', 'decoder.layers.0.trg_trg_att.v_layer.bias', 'decoder.layers.0.trg_trg_att.v_layer.weight', 'decoder.layers.0.x_layer_norm.bias', 'decoder.layers.0.x_layer_norm.weight', 'encoder.layers.0.feed_forward.layer_norm.bias', 'encoder.layers.0.feed_forward.layer_norm.weight', 'encoder.layers.0.feed_forward.pwff_layer.0.bias', 'encoder.layers.0.feed_forward.pwff_layer.0.weight', 'encoder.layers.0.feed_forward.pwff_layer.3.bias', 'encoder.layers.0.feed_forward.pwff_layer.3.weight', 'encoder.layers.0.layer_norm.bias', 'encoder.layers.0.layer_norm.weight', 'encoder.layers.0.src_src_att.k_layer.bias', 'encoder.layers.0.src_src_att.k_layer.weight', 'encoder.layers.0.src_src_att.output_layer.bias', 'encoder.layers.0.src_src_att.output_layer.weight', 'encoder.layers.0.src_src_att.q_layer.bias', 'encoder.layers.0.src_src_att.q_layer.weight', 'encoder.layers.0.src_src_att.v_layer.bias', 'encoder.layers.0.src_src_att.v_layer.weight', 'encoder.layers.1.feed_forward.layer_norm.bias', 'encoder.layers.1.feed_forward.layer_norm.weight', 'encoder.layers.1.feed_forward.pwff_layer.0.bias', 'encoder.layers.1.feed_forward.pwff_layer.0.weight', 'encoder.layers.1.feed_forward.pwff_layer.3.bias', 'encoder.layers.1.feed_forward.pwff_layer.3.weight', 'encoder.layers.1.layer_norm.bias', 'encoder.layers.1.layer_norm.weight', 'encoder.layers.1.src_src_att.k_layer.bias', 'encoder.layers.1.src_src_att.k_layer.weight', 'encoder.layers.1.src_src_att.output_layer.bias', 'encoder.layers.1.src_src_att.output_layer.weight', 'encoder.layers.1.src_src_att.q_layer.bias', 'encoder.layers.1.src_src_att.q_layer.weight', 'encoder.layers.1.src_src_att.v_layer.bias', 'encoder.layers.1.src_src_att.v_layer.weight', 'encoder.layers.2.feed_forward.layer_norm.bias', 'encoder.layers.2.feed_forward.layer_norm.weight', 'encoder.layers.2.feed_forward.pwff_layer.0.bias', 'encoder.layers.2.feed_forward.pwff_layer.0.weight', 'encoder.layers.2.feed_forward.pwff_layer.3.bias', 'encoder.layers.2.feed_forward.pwff_layer.3.weight', 'encoder.layers.2.layer_norm.bias', 'encoder.layers.2.layer_norm.weight', 'encoder.layers.2.src_src_att.k_layer.bias', 'encoder.layers.2.src_src_att.k_layer.weight', 'encoder.layers.2.src_src_att.output_layer.bias', 'encoder.layers.2.src_src_att.output_layer.weight', 'encoder.layers.2.src_src_att.q_layer.bias', 'encoder.layers.2.src_src_att.q_layer.weight', 'encoder.layers.2.src_src_att.v_layer.bias', 'encoder.layers.2.src_src_att.v_layer.weight', 'encoder.layers.3.feed_forward.layer_norm.bias', 'encoder.layers.3.feed_forward.layer_norm.weight', 'encoder.layers.3.feed_forward.pwff_layer.0.bias', 'encoder.layers.3.feed_forward.pwff_layer.0.weight', 'encoder.layers.3.feed_forward.pwff_layer.3.bias', 'encoder.layers.3.feed_forward.pwff_layer.3.weight', 'encoder.layers.3.layer_norm.bias', 'encoder.layers.3.layer_norm.weight', 'encoder.layers.3.src_src_att.k_layer.bias', 'encoder.layers.3.src_src_att.k_layer.weight', 'encoder.layers.3.src_src_att.output_layer.bias', 'encoder.layers.3.src_src_att.output_layer.weight', 'encoder.layers.3.src_src_att.q_layer.bias', 'encoder.layers.3.src_src_att.q_layer.weight', 'encoder.layers.3.src_src_att.v_layer.bias', 'encoder.layers.3.src_src_att.v_layer.weight', 'src_embed.lut.weight']
+2024-05-07 08:45:54,762 - INFO - joeynmt.prediction - Model(
+	encoder=TransformerEncoder(num_layers=4, num_heads=2, alpha=1.0, layer_norm="pre", activation=ReLU()),
+	decoder=TransformerDecoder(num_layers=1, num_heads=2, alpha=1.0, layer_norm="post", activation=ReLU()),
+	src_embed=Embeddings(embedding_dim=256, vocab_size=4117),
+	trg_embed=Embeddings(embedding_dim=256, vocab_size=4117),
+	loss_function=XentLoss(criterion=KLDivLoss(), smoothing=0.3))
+2024-05-07 08:45:54,771 - INFO - joeynmt.builders - Adam(lr=0.0003, weight_decay=0.0, betas=[0.9, 0.999])
+2024-05-07 08:45:54,772 - INFO - joeynmt.builders - ReduceLROnPlateau(mode=min, verbose=False, threshold_mode=abs, eps=0.0, factor=0.7, patience=8)
+2024-05-07 08:45:54,772 - INFO - joeynmt.training - Train config:
+	device: cpu
+	n_gpu: 0
+	ddp training: False
+	16-bits training: False
+	gradient accumulation: 1
+	batch size per device: 2048
+	effective batch size (w. parallel & accumulation): 2048
+2024-05-07 08:45:54,772 - INFO - joeynmt.training - EPOCH 1
